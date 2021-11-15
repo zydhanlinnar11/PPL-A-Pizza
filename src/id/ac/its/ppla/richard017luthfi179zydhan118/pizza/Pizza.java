@@ -12,14 +12,14 @@ public class Pizza {
 	private final ArrayList<PizzaTopping> pizzaToppings = new ArrayList<>();
 	private final PizzaCrust crust;
 
-	public Pizza(PizzaTopping primaryTopping, PizzaCrust crust) {
+	public Pizza(PizzaCrust crust, PizzaTopping primaryTopping) {
 		this.crust = crust;
 		pizzaToppings.add(primaryTopping);
 		calculatePrice();
 	}
 
-	public Pizza(PizzaTopping primaryTopping, PizzaCrust crust, PizzaTopping[] optionalToppings) {
-		this(primaryTopping, crust);
+	public Pizza(PizzaCrust crust, PizzaTopping primaryTopping, PizzaTopping[] optionalToppings) {
+		this(crust, primaryTopping);
 		pizzaToppings.addAll(List.of(optionalToppings));
 		calculatePrice();
 	}

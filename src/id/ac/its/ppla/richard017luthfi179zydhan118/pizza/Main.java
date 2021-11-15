@@ -1,9 +1,7 @@
 package id.ac.its.ppla.richard017luthfi179zydhan118.pizza;
 
 import id.ac.its.ppla.richard017luthfi179zydhan118.pizza.crust.CheeseCrust;
-import id.ac.its.ppla.richard017luthfi179zydhan118.pizza.toppings.MozzarellaTopping;
-import id.ac.its.ppla.richard017luthfi179zydhan118.pizza.toppings.MushroomTopping;
-import id.ac.its.ppla.richard017luthfi179zydhan118.pizza.toppings.BeefTopping;
+import id.ac.its.ppla.richard017luthfi179zydhan118.pizza.toppings.*;
 
 public class Main {
     public static void main(String[] args) {
