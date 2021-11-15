@@ -21,5 +21,18 @@ public class Main {
 
         System.out.println(pizza3);
         System.out.println(pizza3.pizzaPrice());
+        
+        Pizza customPizza1 = new Pizza(new PentolTopping(), new SausageTopping(), new CheeseCrust());
+        Pizza customPizza2 = new Pizza(new PentolTopping(), new BeefTopping(), new TunaTopping(), new MozarellaTopping(), new CheeseCrust());
+        Pizza completePizza = new Pizza(new MozarellaTopping(), new MushroomTopping(), new BeefTopping(), new ChickenTopping(), new PentolTopping(), new SausageTopping(), new TunaTopping(), new CheeseCrust());
+        
+        System.out.println(customPizza1);
+        System.out.println(customPizza1.pizzaPrice());
+        
+        System.out.println(customPizza2);
+        System.out.println(customPizza2.pizzaPrice());
+        
+        System.out.println(completePizza);
+        System.out.println(completePizza.pizzaPrice());
     }
 }
