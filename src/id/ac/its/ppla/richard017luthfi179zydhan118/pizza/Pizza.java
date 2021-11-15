@@ -33,12 +33,13 @@ public class Pizza {
 
 	@Override
 	public String toString() {
-		String desc = "Here's your pizza with topping: ";
+		StringBuilder desc = new StringBuilder();
+		desc.append(String.format("Here's your %s crust pizza with topping:\n", crust.getName().toLowerCase()));
 
 		for(PizzaTopping pizzaTopping: pizzaToppings) {
-			desc += pizzaTopping.getName() + " ";
+			desc.append(String.format("- %s\n", pizzaTopping.getName()));
 		}
-		return desc;
+		return desc.toString();
 	}
 
 	public int pizzaPrice() {
