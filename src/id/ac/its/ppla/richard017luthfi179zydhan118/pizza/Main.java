@@ -5,12 +5,12 @@ import id.ac.its.ppla.richard017luthfi179zydhan118.pizza.toppings.*;
 
 public class Main {
     public static void main(String[] args) {
-        Pizza pizza = new Pizza(new CheeseCrust(), new MozzarellaTopping());
+        Pizza pizza = new Pizza(new OriginalCrust(), new MozzarellaTopping());
 
         System.out.println(pizza);
         System.out.printf("Total price: %d\n\n", pizza.pizzaPrice());
         
-        Pizza pizza2 = new Pizza(new CheeseCrust(), new MushroomTopping());
+        Pizza pizza2 = new Pizza(new PanCrust(), new MushroomTopping());
 
         System.out.println(pizza2);
         System.out.printf("Total price: %d\n\n", pizza2.pizzaPrice());
